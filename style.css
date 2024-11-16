@@ -9,10 +9,29 @@
     width: 50%;
 }
 
-#skill li strong {
+
+#aboutme .list-skill {
+    border-left: 2px solid white;
+}
+#aboutme ul {
+    border-left: 2px solid white;
+    margin-left: 1rem;
+}
+
+#aboutme ul li {
+    position: relative;
+    left: -15px;
+}
+
+#aboutme li::marker {
+    font-size: 1.3rem;
+}
+
+#aboutme li strong {
     display: inline-block;
     width: 13rem;
 }
-#skill li span::before {
-content: ': ';
+
+#aboutme li span::before {
+    content: ': ';
 }
