@@ -13,6 +13,12 @@ header {
     width: 50%;
 }
 
+.description a {
+    font-size: 2rem;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
 
 #aboutme .list-skill {
     border-left: 2px solid white;
