@@ -45,7 +45,7 @@ const Navbar = () => {
                         {navLink.map((nav, index) => (
                             <a
                                 key={index}
-                                className="nav-link text-yellow relative group"
+                                className="list-link text-yellow relative group"
                                 href={nav.link}
                             >
                                 <span>{nav.text}</span>
