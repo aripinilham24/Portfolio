@@ -62,7 +62,7 @@ const Home = () => {
         <section
             id="home"
             className="w-full h-screen flex flex-col-reverse
- justify-center items-center gap-4 md:flex-row md:gap-0 relative"
+ justify-evenly items-center gap-4 md:flex-row md:gap-0 relative"
         >
             <div className="w-full mx-auto p-7 description text-yellow">
                 <h1 className="text-3xl md:text-5xl font-bold">

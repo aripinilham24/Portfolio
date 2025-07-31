@@ -55,11 +55,11 @@ section {
   }
 
   .list-link {
-    @apply hover:bg-[#CC66DA] ease-in-out ps-4;  
+    @apply hover:bg-[#CC66DA] active:bg-[#CC66DA] ease-in-out ps-4;  
   }
 
   .button {
-    @apply bg-[#CC66DA] p-2 md:p-3 rounded hover:bg-transparent hover:border-2 hover:border-[#CC66DA];
+    @apply bg-[#CC66DA] p-2 md:p-3 rounded hover:bg-transparent hover:border-2 hover:border-[#CC66DA] active:bg-transparent active:border-2 active:border-[#CC66DA];
   }
   
 }
