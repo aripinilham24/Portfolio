@@ -65,13 +65,13 @@ const Home = () => {
  justify-center items-center gap-4 md:flex-row md:gap-0 relative"
         >
             <div className="w-full mx-auto p-7 description text-yellow">
-                <h1 className="text-5xl font-bold">
+                <h1 className="text-3xl md:text-5xl font-bold">
                     <span className="bg-[#CC66DA] rounded">Ilham Dev</span>:
                     Code. Build. Deliver
                 </h1>
-                <h1 className="text-5xl font-bold">Bringing ideas to life </h1>
-                <h1 className="text-5xl font-bold">through clean and </h1>
-                <h1 className="text-5xl font-bold">scalable code.</h1>
+                <h1 className="text-3xl md:text-5xl font-bold">Bringing ideas to life </h1>
+                <h1 className="text-3xl md:text-5xl font-bold">through clean and </h1>
+                <h1 className="text-3xl md:text-5xl font-bold">scalable code.</h1>
 
                 {/* <div className="contact d-flex gap-3">
                     <a
@@ -103,7 +103,7 @@ const Home = () => {
 
                 <Button
                     className="button absolute bottom-[-20px] md:bottom-25"
-                    href="#"
+                    href="#projects"
                     text="See my Projects"
                     ref={btnRef}
                 />

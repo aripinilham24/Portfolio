@@ -1,17 +1,31 @@
+import { motion } from "motion/react";
+
 const ProjectsBox = ({ img, title, desc }) => {
     return (
-        <div className="card p-5 bg-[#CC66DA] rounded text-yellow shadow-xl">
-            <img src={img} className=" md:h-50 object-cover rounded shadow-xl" alt="thumbnail projetc" />
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="card p-5 bg-[#CC66DA] rounded text-yellow shadow-xl relative"
+        >
+            <img
+                src={img}
+                className=" md:h-50 object-cover rounded shadow-xl"
+                alt="thumbnail projetc"
+            />
             <div className="card-body">
                 <h5 className="text-3xl font-bold">{title}</h5>
-                <p>
-                    {desc}
-                </p>
+                <p>{desc}</p>
                 {/* <a href={link} className="btn btn-primary">
                     Check
                 </a> */}
             </div>
-        </div>
+        </motion.div>
     );
 };
 

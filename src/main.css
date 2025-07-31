@@ -59,7 +59,7 @@ section {
   }
 
   .button {
-    @apply bg-[#CC66DA] p-3 rounded hover:bg-transparent hover:border-2 hover:border-[#CC66DA];
+    @apply bg-[#CC66DA] p-2 md:p-3 rounded hover:bg-transparent hover:border-2 hover:border-[#CC66DA];
   }
   
 }
