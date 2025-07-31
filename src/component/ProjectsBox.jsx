@@ -1,26 +1,15 @@
-const ProjectsBox = ({img, title, stacks, link}) => {
+const ProjectsBox = ({ img, title, desc }) => {
     return (
-        <div className="col">
-            <div className="card h-100">
-                <img
-                    src={img}
-                    className="card-img-top"
-                    alt="thumbnail projetc"
-                />
-                <div className="card-body">
-                    <h5 className="card-title">{title}</h5>
-                    <ul>
-                        {stacks.map((item, index)=>(
-                            <li key={index}>{item}</li>
-                        ))}
-                    </ul>
-                    <a
-                        href={link}
-                        className="btn btn-primary"
-                    >
-                        Check
-                    </a>
-                </div>
+        <div className="card p-5 bg-[#CC66DA] rounded text-yellow shadow-xl">
+            <img src={img} className=" md:h-50 object-cover rounded shadow-xl" alt="thumbnail projetc" />
+            <div className="card-body">
+                <h5 className="text-3xl font-bold">{title}</h5>
+                <p>
+                    {desc}
+                </p>
+                {/* <a href={link} className="btn btn-primary">
+                    Check
+                </a> */}
             </div>
         </div>
     );

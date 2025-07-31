@@ -4,10 +4,10 @@ import { dataProjects } from "../dataKomponen";
 const Projects = () => {
     return (
         <section id="projects" className="p-3">
-            <div className="title">
-                <h1 className="fw-bold text-center">PROJECTS</h1>
+            <div className="title text-center">
+                <h1 className="text-yellow text-4xl">My Projects</h1>
             </div>
-            <div className="card-group-projects row row-cols-1 row-cols-md-3 g-4">
+            <div className="flex flex-col justify-start items-start md:flex-row flex-auto gap-4 mt-5">
                 {dataProjects.map((project, index)=>(
                     <ProjectsBox key={index} {...project} />
                 ))}

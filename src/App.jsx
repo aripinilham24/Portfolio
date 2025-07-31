@@ -8,11 +8,11 @@ const App = () => {
     return (
         <>
             <Header />
-            <main className="text-light">
+            <main>
                 <Home />
-                <AboutMe />
-                <Certificates />
+                {/* <AboutMe /> */}
                 <Projects />
+                <Certificates />
             </main>
         </>
     );

@@ -1,22 +1,79 @@
-const Home = () => {
-    return (
-        <section id="home" className="row p-3 g-0">
-            <div className="col-sm-4 img d-flex justify-content-center align-items-center">
-                <img src="img/IMG_3524.JPG" alt="profile picture" />
-            </div>
-            <div className="col-sm-8 mt-4 mt-sm-0 description d-flex justify-content-center align-items-start flex-column">
-                <p className="fw-bold">
-                    Hello! I’m Aripin, a full-stack web developer specializing
-                    in building websites with React.js and Node.js. With over 2
-                    years of experience, and currently i learning about machine
-                    learning using python language. I’ve helped businesses
-                    across various industries create responsive and reliable
-                    digital solutions. I believe technology should simplify, not
-                    complicate. If you have an exciting project or idea, let’s
-                    connect!
-                </p>
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import Button from "../component/Button";
+import { useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-                <div className="contact d-flex gap-3">
+gsap.registerPlugin(ScrollTrigger);
+const Home = () => {
+    const btnRef = useRef();
+    const imgRef = useRef();
+    useGSAP(() => {
+        ScrollTrigger.matchMedia({
+            "(max-width: 767px)": function () {
+                gsap.fromTo(
+                    imgRef.current,
+                    { scale: 0, opacity: 0 },
+                    {
+                        scale: 1,
+                        opacity: 1,
+                        duration: 1,
+                        ease: "power2.inOut",
+                    }
+                );
+            },
+            "(min-width:768px)": () => {
+                gsap.fromTo(
+                    imgRef.current,
+                    { x: 300, opacity: 0 },
+                    {
+                        x: 0,
+                        opacity: 1,
+                        duration: 1.4,
+                        ease: "power2.inOut",
+                    }
+                );
+            },
+        });
+        gsap.fromTo(
+            ".description h1",
+            { y: 50, opacity: 0 },
+            {
+                y: 0,
+                opacity: 1,
+                stagger: 0.2,
+                duration: 1.4,
+                ease: "power2.inOut",
+            }
+        );
+
+        gsap.fromTo(
+            btnRef.current,
+            { scale: 0, opacity: 0 },
+            {
+                scale: 1,
+                opacity: 1,
+                duration: 2,
+                ease: "power2.inOut",
+            }
+        );
+    });
+    return (
+        <section
+            id="home"
+            className="w-full h-screen flex flex-col-reverse
+ justify-center items-center gap-4 md:flex-row md:gap-0 relative"
+        >
+            <div className="w-full mx-auto p-7 description text-yellow">
+                <h1 className="text-5xl font-bold">
+                    <span className="bg-[#CC66DA] rounded">Ilham Dev</span>:
+                    Code. Build. Deliver
+                </h1>
+                <h1 className="text-5xl font-bold">Bringing ideas to life </h1>
+                <h1 className="text-5xl font-bold">through clean and </h1>
+                <h1 className="text-5xl font-bold">scalable code.</h1>
+
+                {/* <div className="contact d-flex gap-3">
                     <a
                         target="_blank"
                         href="https://www.linkedin.com/in/m-aripin-ilham-37a443246/"
@@ -42,7 +99,22 @@ const Home = () => {
                     >
                         <i className="fa-brands fa-square-whatsapp"></i>
                     </a>
-                </div>
+                </div> */}
+
+                <Button
+                    className="button absolute bottom-[-20px] md:bottom-25"
+                    href="#"
+                    text="See my Projects"
+                    ref={btnRef}
+                />
+            </div>
+            <div className="w-full center">
+                <img
+                    ref={imgRef}
+                    src="img/profile/profilepic1.jpg"
+                    alt="profile picture"
+                    className="object-cover h-70 w-60 blok mx-auto rounded"
+                />
             </div>
         </section>
     );
