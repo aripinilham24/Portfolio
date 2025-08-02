@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 const Certificates = () => {
     return (
-        <section id="certificates" className="p-3 mt-20 md:mt-5">
+        <section id="certificates" className="section">
             <div className="title text-center">
                 <motion.h1
                 initial= {{opacity: 0, scale: 0.8}} 

@@ -3,6 +3,7 @@ import Home from "./sections/Home.jsx";
 import AboutMe from "./sections/AboutMe.jsx";
 import Certificates from "./sections/Certificates.jsx";
 import Projects from "./sections/Projects.jsx";
+import ContactMe from "./sections/ContactMe.jsx";
 import Footer from "./sections/Footer.jsx"
 
 const App = () => {
@@ -11,9 +12,10 @@ const App = () => {
             <Header />
             <main>
                 <Home />
-                {/* <AboutMe /> */}
+                <AboutMe />
                 <Projects />
                 <Certificates />
+                <ContactMe />
             </main>
             <Footer />
         </>

@@ -61,10 +61,10 @@ const Home = () => {
     return (
         <section
             id="home"
-            className="w-full h-screen flex flex-col-reverse
+            className="section w-full h-screen flex flex-col-reverse
  justify-evenly items-center gap-4 md:flex-row md:gap-0 relative"
         >
-            <div className="w-full mx-auto p-7 description text-yellow">
+            <div className="w-full mx-auto p-4 description text-yellow">
                 <h1 className="text-3xl md:text-5xl font-bold">
                     <span className="bg-[#CC66DA] rounded">Ilham Dev</span>:
                     Code. Build. Deliver
