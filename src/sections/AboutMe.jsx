@@ -11,7 +11,7 @@ const AboutMe = () => {
         },
     };
     return (
-        <section id="about" className="p-3 mt-20 md:mt-5 text-yellow relative">
+        <section id="about" className="p-3 mt-20 md:mt-5 text-yellow relative mb-10">
             <div className="title text-center mb-3">
                 <motion.h1
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -83,7 +83,7 @@ const AboutMe = () => {
                     Let’s build something great together!
                 </motion.div>
             </div>
-            <motion.button className="button absolute left-1/2 transform -translate-x-1/2 bottom-[-20px] md:bottom-25 text-yellow">
+            <motion.button className="button absolute left-1/2 transform -translate-x-1/2 bottom-[-20px] md:-bottom-7 text-yellow">
                 <a href="#contact">Contact Me</a>
             </motion.button>
         </section>

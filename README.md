@@ -1,12 +1,33 @@
-# React + Vite
+# 💼 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Description
+Ini adalah website portofolio pribadi yang dibuat menggunakan React dan Tailwind CSS. Website ini menampilkan informasi tentang diri saya, proyek-proyek yang telah saya kerjakan, sertifikat yang saya peroleh, serta form kontak untuk berkomunikasi. Desainnya interaktif dan responsif, dibuat dengan fokus pada pengalaman pengguna yang modern dan bersih.
 
-Currently, two official plugins are available:
+## 🛠️ Technologies Used
+- **React.js**: Library JavaScript untuk membangun antarmuka pengguna.
+- **Tailwind CSS**: Framework CSS utility-first untuk styling yang cepat dan responsif.
+- **Framer Motion**: Untuk animasi dan transisi interaktif yang halus.
+- **EmailJS**: Untuk mengirim email langsung dari form kontak tanpa backend.
+- **React Icons**: Untuk ikon sosial dan navigasi.
+- **Vite**: Development server dan build tool super cepat.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- Loading screen saat website dimuat pertama kali.
+- Navigasi antar section yang halus (smooth scroll).
+- Animasi dinamis pada setiap section saat muncul di viewport.
+- Section "About Me" yang menjelaskan profil secara singkat.
+- Daftar proyek dengan gambar, deskripsi, dan link.
+- Sertifikat yang ditampilkan dalam format grid.
+- Form kontak fungsional yang mengirimkan pesan langsung ke email.
+- Tautan ke media sosial: Email, WhatsApp, LinkedIn, Instagram.
+- Desain yang sepenuhnya responsif untuk berbagai ukuran layar.
 
-## Expanding the ESLint configuration
+## 🤖 AI Support Explanation
+- ✍️ **Penulisan Konten**: Membantu menyusun teks deskriptif yang menarik untuk section "About Me", penjelasan proyek, dan fitur lainnya.
+- 💡 **Struktur Proyek**: Memberi saran tentang struktur folder dan praktik modular dalam React.
+- 🎨 **Tailwind Styling**: Memberikan panduan detail untuk membuat layout responsif dan modern menggunakan Tailwind CSS.
+- 🎬 **Animasi & Efek**: Menjelaskan cara menggunakan Framer Motion untuk membuat animasi saat komponen masuk viewport.
+- 📧 **Form & EmailJS**: Memberi instruksi integrasi form kontak dengan EmailJS tanpa backend.
+- 🧪 **Debugging & Optimalisasi**: Memberi solusi atas masalah umum seperti pengaturan loading screen dan animasi yang tidak jalan.
+- 📄 **README.md**: Membantu membuat dokumentasi proyek yang rapi dan siap untuk publikasi di GitHub.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
