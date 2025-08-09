@@ -2,20 +2,21 @@ import { useState } from "react";
 import { navLink } from "../dataKomponen";
 import BurgerButton from "./BurgerButton";
 import { motion, AnimatePresence } from "motion/react";
+import { ButtonNav } from "./Button";
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <>
-            <nav className="bg-[#9929EA] shadow-sm">
-                <div className="flex justify-between lg:justify-start p-4">
+            <nav className="rounded-full border border-gray-100 bg-gray-200/20 backdrop-blur-sm mt-5 mx-20">
+                <div className="flex justify-around lg:justify-around items-center p-4">
                     <a
                         href="#home"
                         className="nav-link text-xl font-bold hover:scale-105 transition-all duration-200"
                     >
                         Ilham Dev
                     </a>
-                    <div className="hidden lg:flex gap-5 w-6xl justify-center">
+                    <div className="hidden lg:flex gap-5 justify-center">
                         {navLink.map((nav, index) => (
                             <a
                                 key={index}
@@ -27,6 +28,7 @@ const Navbar = () => {
                             </a>
                         ))}
                     </div>
+                    <ButtonNav />
                     <BurgerButton
                         isOpen={menuOpen}
                         onClick={() => setMenuOpen(!menuOpen)}
@@ -40,7 +42,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.3 }}
-                        className="bg-[#9929EA] w-full lg:hidden pb-4 flex flex-col gap-3 fixed"
+                        className="bg-gray-900/30 backdrop-blur-lg border border-gray-100 rounded mt-3 w-50 lg:hidden pb-4 flex flex-col gap-3 fixed left-35"
                     >
                         {navLink.map((nav, index) => (
                             <a

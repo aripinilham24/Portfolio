@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import Loading from "./component/Loading.jsx";
 import Header from "./sections/Header.jsx";
-import Home from "./sections/Home.jsx";
+import Hero from "./sections/Hero.jsx";
 import AboutMe from "./sections/AboutMe.jsx";
 import Certificates from "./sections/Certificates.jsx";
 import Projects from "./sections/Projects.jsx";
 import ContactMe from "./sections/ContactMe.jsx";
 import Footer from "./sections/Footer.jsx";
+import Particle from "./component/particle.jsx";
 
 const App = () => {
     const [loading, setLoading] = useState(true);
@@ -33,9 +34,10 @@ const App = () => {
                 <Loading />
             ) : (
                 <>
+                    <Particle />
                     <Header />
                     <main>
-                        <Home />
+                        <Hero />
                         <AboutMe />
                         <Projects />
                         <Certificates />

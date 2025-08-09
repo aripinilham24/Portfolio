@@ -12,6 +12,8 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.1.11",
+    "@tsparticles/basic": "^3.9.1",
+    "@tsparticles/react": "^3.0.0",
     "gsap": "^3.13.0",
     "motion": "^12.23.9",
     "react": "^19.1.0",

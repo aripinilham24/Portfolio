@@ -1,23 +1,23 @@
 import { motion } from "motion/react";
 
-const BurgerButton = ({ isOpen, onClick }) => {
+const BurgerButton = ({ isOpen, onClick, className }) => {
     return (
-        <button className="block lg:hidden" onClick={onClick}>
+        <button className={`${className} block lg:hidden`} onClick={onClick}>
             <div className="flex-col-center gap-1">
                 <motion.span
-                    animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 8 : 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="w-7 h-1 bg-[#FAEB92]"
+                    animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 6.2 : 0 }}
+                    transition={{ duration: 0.2 }}
+                    className="w-5 h-[2px] bg-white rounded"
                 />
                 <motion.span
                     animate={{ opacity: isOpen ? 0 : 1, x: isOpen ? -20 : 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="w-7 h-1 bg-[#FAEB92]"
+                    transition={{ duration: 0.2 }}
+                    className="w-5 h-[2px] bg-white rounded"
                 />
                 <motion.span
-                    animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? -8 : 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="w-7 h-1 bg-[#FAEB92]"
+                    animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? -6.2 : 0 }}
+                    transition={{ duration: 0.2 }}
+                    className="w-5 h-[2px] bg-white rounded"
                 />
             </div>
         </button>

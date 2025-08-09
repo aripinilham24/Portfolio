@@ -15,10 +15,6 @@ const navLink = [
         text: "Certificates",
         link: "#certificates",
     },
-    {
-        text: "Contact Me",
-        link: "#contact",
-    },
 ]
 
 const dataCertif = [
