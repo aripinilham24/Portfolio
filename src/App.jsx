@@ -7,7 +7,7 @@ import Certificates from "./sections/Certificates.jsx";
 import Projects from "./sections/Projects.jsx";
 import ContactMe from "./sections/ContactMe.jsx";
 import Footer from "./sections/Footer.jsx";
-import Particle from "./component/particle.jsx";
+import Particle from "./component/Particle.jsx";
 
 const App = () => {
     const [loading, setLoading] = useState(true);
