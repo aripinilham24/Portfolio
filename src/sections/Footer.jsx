@@ -10,9 +10,14 @@ const Footer = () => {
                 delay: 0.5,
                 ease: [0, 0.71, 0.2, 1.01],
             }}
-            className="bg-[#9929EA] mt-20"
+            className="bg-gray-900 text-white flex flex-col items-center gap-5 p-5"
         >
-            <p className="text-yellow text-xl font-bold text-center">
+            <div className=" flex gap-5 text-2xl md:text-4xl">
+                <a href="https://github.com/aripinilham24"><i class="bi bi-github"></i></a>
+                <a href="www.linkedin.com/in/aripin-ilham-37a443246"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/muhamadarifinilham24"><i class="bi bi-instagram"></i></a>
+            </div>
+            <p className="md:text-xl">
                 &copy; 2025 Ilham Dev. All rights reserved.
             </p>
         </motion.footer>

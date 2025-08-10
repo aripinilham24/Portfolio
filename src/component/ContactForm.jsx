@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
 import { useState } from "react";
-const ContactMe = () => {
+
+const ContactForm = () => {
   const [status, setStatus] = useState("");
 
   const handleSubmit = async (e) => {
@@ -26,24 +26,9 @@ const ContactMe = () => {
       setStatus("⚠️ Something went wrong.");
     }
   };
-  return (
-    <section className="section bg-gray-950 md:grid grid-cols-2" id="contact">
-      <div className="title flex flex-col items-center self-start md:items-start">
-        <motion.h1
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="mb-5"
-        >
-          Contact Me
-        </motion.h1>
 
-        <h2 className="text-center text-3xl font-bold mb-3">Ready to launch your vision online?</h2>
-        <p>Let’s craft a stunning, high-performance website that turns your ideas into reality. Reach out and let’s make it happen!</p>
-      </div>
-        <div className="w-full">
-          <form onSubmit={handleSubmit} className="flex flex-col relative text-blue-300">
+  return (
+    <form onSubmit={handleSubmit} className="flex flex-col relative text-blue-300">
       <label className="mt-5" htmlFor="name">Name</label>
       <input
         className="border border-blue-300 bg-gray-900 rounded p-2"
@@ -73,9 +58,7 @@ const ContactMe = () => {
 
       {status && <p className="mt-3 text-sm">{status}</p>}
     </form>
-        </div>
-    </section>
   );
 };
 
-export default ContactMe;
+export default ContactForm;

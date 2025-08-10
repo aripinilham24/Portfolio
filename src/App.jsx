@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Loading from "./component/Loading.jsx";
 import Header from "./sections/Header.jsx";
 import Hero from "./sections/Hero.jsx";
-import AboutMe from "./sections/AboutMe.jsx";
+import About from "./sections/About.jsx";
 import Certificates from "./sections/Certificates.jsx";
 import Projects from "./sections/Projects.jsx";
 import ContactMe from "./sections/ContactMe.jsx";
@@ -38,7 +38,7 @@ const App = () => {
                     <Header />
                     <main>
                         <Hero />
-                        <AboutMe />
+                        <About />
                         <Projects />
                         <Certificates />
                         <ContactMe />

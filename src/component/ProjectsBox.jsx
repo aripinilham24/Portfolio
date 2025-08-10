@@ -11,15 +11,15 @@ const ProjectsBox = ({ img, title, desc }) => {
                 delay: 0.5,
                 ease: [0, 0.71, 0.2, 1.01],
             }}
-            className="card p-5 bg-[#CC66DA] rounded text-yellow shadow-xl relative"
+            className="card p-5 bg-gray-900/50 rounded text-white shadow-xl relative"
         >
             <img
                 src={img}
-                className=" md:h-50 object-cover rounded shadow-xl"
+                className=" md:h-50 object-cover rounded shadow-xl mb-3"
                 alt="thumbnail projetc"
             />
             <div className="card-body">
-                <h5 className="text-3xl font-bold">{title}</h5>
+                <h5 className="text-xl md:text-2xl font-bold mb-3">{title}</h5>
                 <p>{desc}</p>
                 {/* <a href={link} className="btn btn-primary">
                     Check

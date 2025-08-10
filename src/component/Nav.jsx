@@ -40,7 +40,7 @@ const Nav = () => {
                         } text-white flex-col gap-3 ms-5 absolute -bottom-45 border w-xs px-5 bg-gray-900/20 backdrop-blur-lg rounded-lg ms-10`}
                     >
                         {navLink.map((nav, i) => (
-                            <a key={i} href={nav.link} className="transform hover:bg-gray-950 active:bg-gray-800 rounded p-1">
+                            <a key={i} href={nav.link} className="transform hover:bg-gradient-to-r from-blue-800 to-blue-300 active:bg-gradient-to-r from-blue-800 to-blue-300 rounded p-1">
                                 {nav.text}
                             </a>
                         ))}

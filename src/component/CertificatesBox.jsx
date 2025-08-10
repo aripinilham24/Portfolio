@@ -11,15 +11,15 @@ const CertificatesBox = ({ img, title, desc }) => {
                 delay: 0.5,
                 ease: [0, 0.71, 0.2, 1.01],
             }}
-            className="card p-5 bg-[#CC66DA] rounded text-yellow shadow-xl relative"
+            className="card p-5 bg-gray-950/50 rounded text-white shadow-xl relative"
         >
             <img
                 src={img}
-                className=" md:w-100 object-cover rounded shadow-xl"
+                className=" md:w-100 object-cover rounded shadow-x mb-3"
                 alt="thumbnail projetc"
             />
             <div className="card-body">
-                <h5 className="text-3xl font-bold">{title}</h5>
+                <h3 className="text-xl md:text-2xl font-bold mb-3">{title}</h3>
                 <p>{desc}</p>
                 {/* <a href={link} className="btn btn-primary">
                     Check
