@@ -21,7 +21,7 @@ const Hero = () => {
             id="home"
             className="hero px-10 h-screen sticky top-0 border z-0"
         >
-            <div className="text-white text-center mt-30 md:mt-70 lg:mt-20">
+            <div className="text-white text-center mt-20">
                 <h1 className="text-[1.7rem] mt-3 md:text-6xl lg:text-7xl font-bold">
                     Bringing ideas to life{" "}
                 </h1>
