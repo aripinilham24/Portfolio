@@ -15,7 +15,7 @@ const CertificatesBox = ({ img, title, desc }) => {
         >
             <img
                 src={img}
-                className=" md:w-100 object-cover rounded shadow-x mb-3"
+                className="w-full object-cover rounded shadow-x mb-3"
                 alt="thumbnail projetc"
             />
             <div className="card-body">

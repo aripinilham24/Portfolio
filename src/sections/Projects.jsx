@@ -19,7 +19,7 @@ const Projects = () => {
                 <p>Explore the work I’ve brought to life — from concept to launch.
 Each project is a story of collaboration, creativity, and problem-solving.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-start content-stretch gap-10 mt-10">
+            <div className="grid grid-cols-1 lg:grid-cols-3 justify-start content-stretch gap-10 mt-10">
                 {dataProjects.map((project, index) => (
                     <ProjectsBox key={index} {...project} />
                 ))}

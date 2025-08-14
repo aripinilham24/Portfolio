@@ -4,7 +4,7 @@ const navLink = [
         link: "#home",
     },
     {
-        text: "About Me",
+        text: "About",
         link: "#about",
     },
     {

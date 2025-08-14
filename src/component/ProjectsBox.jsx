@@ -15,7 +15,7 @@ const ProjectsBox = ({ img, title, desc }) => {
         >
             <img
                 src={img}
-                className=" md:h-50 object-cover rounded shadow-xl mb-3"
+                className="w-full object-cover rounded shadow-xl mb-3"
                 alt="thumbnail projetc"
             />
             <div className="card-body">
