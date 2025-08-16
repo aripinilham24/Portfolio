@@ -44,6 +44,16 @@ const ContactMe = () => {
       </div>
         <div className="w-full">
           <form onSubmit={handleSubmit} className="flex flex-col relative text-blue-300">
+      <label className="mt-5" htmlFor="name">Email</label>
+      <input
+        className="border border-blue-300 bg-gray-900 rounded p-2"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Input your email..."
+        required
+      />
+
       <label className="mt-5" htmlFor="name">Name</label>
       <input
         className="border border-blue-300 bg-gray-900 rounded p-2"
