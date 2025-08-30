@@ -14,7 +14,7 @@ const Footer = () => {
         >
             <div className=" flex gap-5 text-2xl md:text-4xl">
                 <a href="https://github.com/aripinilham24"><i class="bi bi-github"></i></a>
-                <a href="www.linkedin.com/in/aripin-ilham-37a443246"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/aripin-ilham-37a443246/"><i class="bi bi-linkedin"></i></a>
                 <a href="https://www.instagram.com/muhamadarifinilham24"><i class="bi bi-instagram"></i></a>
             </div>
             <p className="md:text-xl">
