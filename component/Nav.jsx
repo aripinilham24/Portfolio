@@ -9,6 +9,7 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollTop = () => {
+    console.log("scroll to top");
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -29,12 +30,9 @@ const Nav = () => {
               key={i}
               href={nav.link}
               onClick={(e) => {
-                if (nav.text.toLowerCase() === "#home") {
+                if (nav.text.toLowerCase() === "home") {
                   e.preventDefault();
-                  window.scrollTo({
-                    top: 0,
-                    behavior: "smooth",
-                  });
+                scrollTop();
                 }
               }}
               className="relative group"
