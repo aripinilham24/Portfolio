@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import "tailwindcss";
-/* @plugin "daisyui"; */
-
-@theme {
-  --font-sans: "Roboto", sans-serif;
-}
 
 :root {
   --bg-dark: oklch(21% 0.034 264.665);
@@ -13,7 +7,6 @@
 
 body {
   background-color: var(--bg-dark);
-
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
   overflow-x: hidden;

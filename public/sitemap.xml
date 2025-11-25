@@ -1,34 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Halaman Utama -->
   <url>
     <loc>https://portfolioaripinilham.vercel.app/</loc>
+    <lastmod>2025-11-24</lastmod>
     <priority>1.0</priority>
-  </url>
-
-  <!-- Section Tentang -->
-  <url>
-    <loc>https://portfolioaripinilham.vercel.app/#about</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Section Proyek -->
-  <url>
-    <loc>https://portfolioaripinilham.vercel.app/#projects</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Section Sertifikat -->
-  <url>
-    <loc>https://portfolioaripinilham.vercel.app/#certificates</loc>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Section Kontak -->
-  <url>
-    <loc>https://portfolioaripinilham.vercel.app/#contact</loc>
-    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
 </urlset>

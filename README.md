@@ -1,33 +1,36 @@
-# 💼 Personal Portfolio Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## 📝 Description
-Ini adalah website portofolio pribadi yang dibuat menggunakan React dan Tailwind CSS. Website ini menampilkan informasi tentang diri saya, proyek-proyek yang telah saya kerjakan, sertifikat yang saya peroleh, serta form kontak untuk berkomunikasi. Desainnya interaktif dan responsif, dibuat dengan fokus pada pengalaman pengguna yang modern dan bersih.
+## Getting Started
 
-## 🛠️ Technologies Used
-- **React.js**: Library JavaScript untuk membangun antarmuka pengguna.
-- **Tailwind CSS**: Framework CSS utility-first untuk styling yang cepat dan responsif.
-- **Framer Motion**: Untuk animasi dan transisi interaktif yang halus.
-- **EmailJS**: Untuk mengirim email langsung dari form kontak tanpa backend.
-- **React Icons**: Untuk ikon sosial dan navigasi.
-- **Vite**: Development server dan build tool super cepat.
+First, run the development server:
 
-## ✨ Features
-- Loading screen saat website dimuat pertama kali.
-- Navigasi antar section yang halus (smooth scroll).
-- Animasi dinamis pada setiap section saat muncul di viewport.
-- Section "About Me" yang menjelaskan profil secara singkat.
-- Daftar proyek dengan gambar, deskripsi, dan link.
-- Sertifikat yang ditampilkan dalam format grid.
-- Form kontak fungsional yang mengirimkan pesan langsung ke email.
-- Tautan ke media sosial: Email, WhatsApp, LinkedIn, Instagram.
-- Desain yang sepenuhnya responsif untuk berbagai ukuran layar.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 🤖 AI Support Explanation
-- ✍️ **Penulisan Konten**: Membantu menyusun teks deskriptif yang menarik untuk section "About Me", penjelasan proyek, dan fitur lainnya.
-- 💡 **Struktur Proyek**: Memberi saran tentang struktur folder dan praktik modular dalam React.
-- 🎨 **Tailwind Styling**: Memberikan panduan detail untuk membuat layout responsif dan modern menggunakan Tailwind CSS.
-- 🎬 **Animasi & Efek**: Menjelaskan cara menggunakan Framer Motion untuk membuat animasi saat komponen masuk viewport.
-- 📧 **Form & EmailJS**: Memberi instruksi integrasi form kontak dengan EmailJS tanpa backend.
-- 🧪 **Debugging & Optimalisasi**: Memberi solusi atas masalah umum seperti pengaturan loading screen dan animasi yang tidak jalan.
-- 📄 **README.md**: Membantu membuat dokumentasi proyek yang rapi dan siap untuk publikasi di GitHub.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

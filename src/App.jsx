@@ -9,6 +9,7 @@ import ContactMe from "./sections/ContactMe.jsx";
 import Footer from "./sections/Footer.jsx";
 import Particle from "./component/Particle.jsx";
 
+
 const App = () => {
     const [loading, setLoading] = useState(true);
 

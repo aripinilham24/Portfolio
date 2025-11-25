@@ -3,7 +3,7 @@ import Navbar from "../component/Navbar";
 
 const Header = () => {
     return (
-        <header className="sticky top-0 bg-dark z-10">
+        <header className="sticky top-5 bg-dark z-10">
             {/* <Navbar /> */}
             <Nav />
         </header>
