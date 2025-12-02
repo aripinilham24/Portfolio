@@ -23,7 +23,7 @@ const About = () => {
                 CSS, and have experience integrating third-party services such
                 as Midtrans, WhatsApp API, and more. Whether you need a landing
                 page, a full-featured e-commerce site, or a custom admin
-                dashboard, I can help you bring your ideas to life—efficiently
+                dashboard, I can help you bring your ideas to life efficiently
                 and on time.
             </p>
             <div className="skills mt-10 flex flex-wrap justify-center gap-10 text-blue-300">

@@ -16,7 +16,7 @@ const Projects = () => {
                     My Projects
                 </motion.h1>
                 <h2>Turning Ideas into Digital Reality</h2>
-                <p>Explore the work I’ve brought to life — from concept to launch.
+                <p>Explore the work I’ve brought to life from concept to launch.
 Each project is a story of collaboration, creativity, and problem-solving.</p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 justify-start content-stretch gap-10 mt-10">

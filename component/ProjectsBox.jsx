@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 
-const ProjectsBox = ({ img, title, desc }) => {
+const ProjectsBox = ({ img, title, desc, link }) => {
     return (
-        <motion.div
+        <motion.a
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -11,7 +11,9 @@ const ProjectsBox = ({ img, title, desc }) => {
                 delay: 0.5,
                 ease: [0, 0.71, 0.2, 1.01],
             }}
-            className="card p-5 bg-gray-900/50 rounded text-white shadow-xl relative"
+            className="card p-5 bg-gray-900/50 rounded text-white shadow-xl relative hover:shadow-xl hover:shadow-blue-300 transition-shadow"
+            href={link}
+            target="blank"
         >
             <img
                 src={img}
@@ -25,7 +27,7 @@ const ProjectsBox = ({ img, title, desc }) => {
                     Check
                 </a> */}
             </div>
-        </motion.div>
+        </motion.a>
     );
 };
 

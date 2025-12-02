@@ -108,11 +108,11 @@ const dataProjects = [
         link: "https://game-tebak-angka-jade.vercel.app/",
     },
     {
-        title: "Score Board App",
-        img: "img/projects/Screenshot 2024-11-17 164141.png",
-        stacks: ["HTML", "CSS", "JavaScript"],
-        desc: "A digital scoreboard for two teams, allowing users to increase, decrease, and reset scores. Designed with clean UI and smooth interactions using JavaScript.",
-        link: "https://aripinilham24.github.io/score-board/",
+        title: "Hopefund",
+        img: "img/projects/hopefund.png",
+        stacks: ["MongoDB", "Express.js", "React.js", "Node.js"],
+        desc: "A crowdfunding platform that enables users to create and support fundraising campaigns. Built with the MERN stack, it features user authentication, campaign management, and secure payment integration.",
+        link: "https://hopefund-donasi-online.vercel.app/",
     },
 ];
 
