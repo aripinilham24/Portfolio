@@ -46,7 +46,7 @@ nav {
     @apply bg-gray-900/20 backdrop-blur-lg text-white grid grid-cols-3 items-center border border-white rounded-full p-2 m-5 relative;
 
     .brand {
-      @apply justify-self-center hover:scale-105 active:scale-0 transform transition-all hover:text-shadow-lg/20 hover:text-shadow-blue-300;
+      @apply justify-self-center hover:scale-105 active:scale-0 transform transition-all;
     }
     .buttonTC {
       @apply justify-self-end;
