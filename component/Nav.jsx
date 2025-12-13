@@ -55,7 +55,7 @@ const Nav = () => {
             {...slideFromTop}
             className={`${
               isOpen ? "flex" : "hidden"
-            } text-white flex-col gap-3 ms-5 absolute -bottom-45 border w-xs px-5 bg-gray-900/20 backdrop-blur-lg rounded-lg ms-10`}
+            } text-white flex-col gap-3 ms-5 absolute -bottom-45 border w-100 px-5 bg-gray-900/20 backdrop-blur-lg rounded-lg ms-10`}
           >
             <a
               href="#home"
