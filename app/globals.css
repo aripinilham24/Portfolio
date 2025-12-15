@@ -5,6 +5,10 @@
   --bg-dark: oklch(21% 0.034 264.665);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-dark);
   scroll-behavior: smooth;

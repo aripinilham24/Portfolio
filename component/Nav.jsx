@@ -1,6 +1,6 @@
 import { navLink } from "../dataKomponen";
 import BurgerButton from "./BurgerButton";
-import Button, { ButtonNav } from "./Button";
+import { ButtonNav } from "./Button";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { slideFromTop } from "../dataKomponen/animation";
@@ -12,7 +12,6 @@ const Nav = () => {
     console.log("scroll to top");
     window.scrollTo({
       top: 0,
-      // behavior: "smooth",
     });
   };
 
