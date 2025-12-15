@@ -1,8 +1,11 @@
 import { ButtonLink } from "../component/Button";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import {useRef} from "react";
 
 const Hero = () => {
+
+    const heroRef = useRef(null)
     useGSAP(() => {
         gsap.fromTo(
             "h1",
@@ -20,6 +23,7 @@ const Hero = () => {
         <section
             id="home"
             className="hero px-10 h-screen sticky top-0 border z-0"
+            ref={heroRef}
         >
             <div className="text-center mt-20 bg-gradient-to-r from-blue-800 to-blue-300 bg-clip-text text-transparent">
                 <h1 className="text-[1.7rem] mt-3 md:text-6xl lg:text-7xl font-bold">

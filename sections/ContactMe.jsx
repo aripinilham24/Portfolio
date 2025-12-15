@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
+import Swal from "sweetalert2";
 
 const ContactMe = () => {
+  const [submit, setSubmit] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    setSubmit(!submit);
 
     const formData = new FormData(e.target);
     formData.append("_captcha", "false");
@@ -47,9 +52,10 @@ const ContactMe = () => {
         icon: "success",
         title: "Something went wrong.",
       });
+    } finally {
+      setSubmit(!submit);
     }
   };
-  
   return (
     <section className="section bg-gray-950 lg:grid grid-cols-2" id="contact">
       <div className="title flex flex-col items-center self-start lg:items-start">
@@ -116,8 +122,11 @@ const ContactMe = () => {
           <button
             type="submit"
             className="mt-5 p-2 rounded relative overflow-hidden group border border-gray-100 text-gray-100 transition-all duration-300"
+            disabled={submit}
           >
-            <span className="relative z-10">Send Email</span>
+            <span className="relative z-10">
+              {submit ? "Process..." : "Send Email"}
+            </span>
             <span className="absolute -left-1 top-0 h-full w-0 bg-gradient-to-r from-blue-800 to-blue-300 transition-all duration-600 group-hover:w-180 group-active:w-xl -skew-x-6" />
           </button>
         </form>
