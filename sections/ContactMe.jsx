@@ -1,14 +1,25 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+
 const ContactMe = () => {
-  const [status, setStatus] = useState("");
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // cegah refresh
+    e.preventDefault();
 
     const formData = new FormData(e.target);
     formData.append("_captcha", "false");
     formData.append("_subject", "Pesan dari portfolio site!");
+
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      },
+    });
 
     try {
       const res = await fetch(
@@ -20,15 +31,25 @@ const ContactMe = () => {
       );
 
       if (res.ok) {
-        setStatus("✅ Message sent successfully!");
+        Toast.fire({
+          icon: "success",
+          title: "Message sent successfully!",
+        });
         e.target.reset();
       } else {
-        setStatus("❌ Failed to send message.");
+        Toast.fire({
+          icon: "success",
+          title: "Failed to send message.",
+        });
       }
     } catch (error) {
-      setStatus("⚠️ Something went wrong.");
+      Toast.fire({
+        icon: "success",
+        title: "Something went wrong.",
+      });
     }
   };
+  
   return (
     <section className="section bg-gray-950 lg:grid grid-cols-2" id="contact">
       <div className="title flex flex-col items-center self-start lg:items-start">
@@ -99,8 +120,6 @@ const ContactMe = () => {
             <span className="relative z-10">Send Email</span>
             <span className="absolute -left-1 top-0 h-full w-0 bg-gradient-to-r from-blue-800 to-blue-300 transition-all duration-600 group-hover:w-180 group-active:w-xl -skew-x-6" />
           </button>
-
-          {status && <p className="mt-3 text-sm">{status}</p>}
         </form>
       </div>
     </section>
