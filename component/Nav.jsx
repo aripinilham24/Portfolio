@@ -9,7 +9,6 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollTop = () => {
-    console.log("scroll to top");
     window.scrollTo({
       top: 0,
     });
@@ -50,44 +49,32 @@ const Nav = () => {
 
       <AnimatePresence>
         {isOpen && (
+          <>
+          <div onClick={()=>setIsOpen(!isOpen)} className="w-full h-screen inset-0 z-20 fixed"></div>
           <motion.div
             {...slideFromTop}
             className={`${
               isOpen ? "flex" : "hidden"
-            } text-white flex-col gap-3 ms-5 absolute -bottom-45 border w-[17rem] px-5 bg-gray-900/20 backdrop-blur-lg rounded-lg ms-10`}
+            } z-30 text-white flex-col gap-3 ms-5 absolute -bottom-45 border w-[17rem] px-5 bg-gray-900/20 backdrop-blur-lg rounded-lg ms-10`}
           >
+
+            {navLink.map((nav, i) => (
             <a
-              href="#home"
+              key={i}
+              href={nav.link}
               onClick={(e) => {
-                e.preventDefault();
+                if (nav.text.toLowerCase() === "home") {
+                  e.preventDefault();
                 scrollTop();
+                }
               }}
-              className="transform hover:bg-gradient-to-r from-blue-800 to-blue-300 active:bg-gradient-to-r from-blue-800 to-blue-300 rounded p-1"
+              className="relative group p-1"
             >
-              Home
+              {nav.text}
             </a>
-
-            <a
-              href="#about"
-              className="transform hover:bg-gradient-to-r from-blue-800 to-blue-300 active:bg-gradient-to-r from-blue-800 to-blue-300 rounded p-1"
-            >
-              About
-            </a>
-
-            <a
-              href="#projects"
-              className="transform hover:bg-gradient-to-r from-blue-800 to-blue-300 active:bg-gradient-to-r from-blue-800 to-blue-300 rounded p-1"
-            >
-              Projects
-            </a>
-
-            <a
-              href="#certificates"
-              className="transform hover:bg-gradient-to-r from-blue-800 to-blue-300 active:bg-gradient-to-r from-blue-800 to-blue-300 rounded p-1"
-            >
-              Certificates
-            </a>
+          ))}
           </motion.div>
+          </>
         )}
       </AnimatePresence>
     </>
