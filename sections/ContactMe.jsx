@@ -74,7 +74,7 @@ const ContactMe = () => {
         <h2 className="text-center text-3xl font-bold mb-3">
           Ready to launch your vision online?
         </h2>
-        <p>
+        <p className="lg:pe-10">
           Let’s craft a stunning, high-performance website that turns your ideas
           into reality. Reach out and let’s make it happen!
         </p>

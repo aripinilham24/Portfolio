@@ -18,7 +18,7 @@ const CertificatesBox = ({ img, title, desc, link }) => {
             <img
                 src={img}
                 className="w-full object-cover rounded shadow-x mb-3"
-                alt="thumbnail projetc"
+                alt={title}
             />
             <div className="card-body">
                 <h3 className="text-xl md:text-2xl font-bold mb-3">{title}</h3>

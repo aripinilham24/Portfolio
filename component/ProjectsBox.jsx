@@ -18,7 +18,7 @@ const ProjectsBox = ({ img, title, desc, link }) => {
             <img
                 src={img}
                 className="w-full object-cover rounded shadow-xl mb-3"
-                alt="thumbnail projetc"
+                alt={title}
             />
             <div className="card-body">
                 <h5 className="text-xl md:text-2xl font-bold mb-3">{title}</h5>
