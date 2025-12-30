@@ -57,10 +57,10 @@ export const metadata = {
   // Favicon / Icon
   icons: {
     icon: [
-    { url: "/ilhamDev.png", type: "image/png" },
+    { url: "/favicon.ico", type: "image/png" },
   ],
-  shortcut: "/ilhamDev.png",
-  apple: "/ilhamDev.png",
+  shortcut: "/favicon.ico",
+  apple: "/favicon.ico",
   },
 
   // Viewport
