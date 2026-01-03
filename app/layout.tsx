@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 
@@ -16,9 +16,9 @@ const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
-})
+});
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Ilham Dev | Freelance Full-Stack Web Developer",
   description:
     "Hi, I'm Ilham, a freelance full-stack web developer dedicated to helping businesses and individuals build fast, secure, and user-friendly websites.",
@@ -56,17 +56,16 @@ export const metadata = {
 
   // Favicon / Icon
   icons: {
-    icon: [
-    { url: "/favicon.ico", type: "image/png" },
-  ],
-  shortcut: "/favicon.ico",
-  apple: "/favicon.ico",
+    icon: [{ url: "/favicon.ico", type: "image/png" }],
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
-
-  // Viewport
-  viewport: "width=device-width, initial-scale=1.0",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export default function RootLayout({
   children,
