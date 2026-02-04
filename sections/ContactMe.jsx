@@ -32,7 +32,7 @@ const ContactMe = () => {
         {
           method: "POST",
           body: formData,
-        }
+        },
       );
 
       if (res.ok) {
@@ -78,6 +78,17 @@ const ContactMe = () => {
           Let’s craft a stunning, high-performance website that turns your ideas
           into reality. Reach out and let’s make it happen!
         </p>
+        <div className="mt-10 flex justify-center gap-5 text-2xl md:text-4xl">
+          <a className="hover:text-blue-300" href="https://github.com/aripinilham24">
+            <i className="bi bi-github"></i>
+          </a>
+          <a className="hover:text-blue-300" href="https://www.linkedin.com/in/aripin-ilham-37a443246/">
+            <i className="bi bi-linkedin"></i>
+          </a>
+          <a className="hover:text-blue-300" href="https://www.instagram.com/muhamadarifinilham24">
+            <i className="bi bi-instagram"></i>
+          </a>
+        </div>
       </div>
       <div className="w-full">
         <form
@@ -127,7 +138,7 @@ const ContactMe = () => {
             <span className="relative z-10">
               {submit ? "Process..." : "Send Email"}
             </span>
-            <span className="absolute -left-1 top-0 h-full w-0 bg-gradient-to-r from-blue-800 to-blue-300 transition-all duration-600 group-hover:w-180 group-active:w-xl -skew-x-6" />
+ 6           <span className="absolute -left-1 top-0 h-full w-0 bg-gradient-to-r from-blue-800 to-blue-300 transition-all duration-600 group-hover:w-180 group-active:w-xl -skew-x-6" />
           </button>
         </form>
       </div>
