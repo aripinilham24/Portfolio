@@ -41,7 +41,7 @@ const Nav = () => {
           ))}
         </div>
 
-        <a href="#home" className="brand hover:bg-gradient-to-r from-blue-800 to-blue-300 bg-clip-text hover:text-transparent hover:text-2xl">
+        <a href="#home" className="brand hover:bg-linear-to-r from-blue-800 to-blue-300 bg-clip-text hover:text-transparent hover:text-2xl">
           <strong>Ilham</strong>Dev
         </a>
         <ButtonNav className="buttonTC" />
@@ -55,7 +55,7 @@ const Nav = () => {
             {...slideFromTop}
             className={`${
               isOpen ? "flex" : "hidden"
-            } z-30 text-white flex-col gap-3 ms-5 absolute -bottom-45 border w-[17rem] px-5 bg-gray-900/20 backdrop-blur-lg rounded-lg ms-10`}
+            } z-30 text-white flex-col gap-3 absolute -bottom-45 border w-68 px-5 bg-gray-900/20 backdrop-blur-lg rounded-lg ms-10`}
           >
 
             {navLink.map((nav, i) => (

@@ -27,21 +27,21 @@ const Hero = () => {
       <div className="text-center mt-20">
         <h1
           className="mt-3 lg:p-3 text-[1.7rem] md:text-6xl lg:text-7xl font-bold
-    bg-gradient-to-r from-blue-800 to-blue-300 bg-clip-text text-transparent"
+    bg-linear-to-r from-blue-800 to-blue-300 bg-clip-text text-transparent"
         >
           Bringing ideas to life
         </h1>
 
         <h1
           className="mt-3 lg:p-3 text-[1.7rem] md:text-6xl lg:text-7xl font-bold
-    bg-gradient-to-r from-blue-800 to-blue-300 bg-clip-text text-transparent"
+    bg-linear-to-r from-blue-800 to-blue-300 bg-clip-text text-transparent"
         >
           through clean and
         </h1>
 
         <h1
           className="mt-3 lg:p-3 text-[1.7rem] md:text-6xl lg:text-7xl font-bold
-    bg-gradient-to-r from-blue-800 to-blue-300 bg-clip-text text-transparent"
+    bg-linear-to-r from-blue-800 to-blue-300 bg-clip-text text-transparent"
         >
           scalable code.
         </h1>

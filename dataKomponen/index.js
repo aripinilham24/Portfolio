@@ -121,13 +121,13 @@ const dataProjects = [
     desc: "A web-based application for predicting stunting risk in toddlers using anthropometric data such as age, gender, and height. Built with React and FastAPI, integrating a machine learning model to provide early stunting risk classification.",
     link: "https://prediksi-stunting-pada-balita.vercel.app/",
   },
-  {
-    title: "Number Guess",
-    img: "/img/projects/webp/tebak_angka.webp",
-    stacks: ["HTML", "CSS", "JavaScript"],
-    desc: "A simple and fun number guessing game made with vanilla JavaScript. Users are challenged to guess a random number with real-time feedback and score tracking.",
-    link: "https://game-tebak-angka-jade.vercel.app/",
-  },
+  // {
+  //   title: "Number Guess",
+  //   img: "/img/projects/webp/tebak_angka.webp",
+  //   stacks: ["HTML", "CSS", "JavaScript"],
+  //   desc: "A simple and fun number guessing game made with vanilla JavaScript. Users are challenged to guess a random number with real-time feedback and score tracking.",
+  //   link: "https://game-tebak-angka-jade.vercel.app/",
+  // },
 ];
 
 const skillIcon = [

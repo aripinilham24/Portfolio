@@ -8,7 +8,7 @@ const ContactMe = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    setSubmit(!submit);
+    setSubmit(true);
 
     const formData = new FormData(e.target);
     formData.append("_captcha", "false");
@@ -53,7 +53,7 @@ const ContactMe = () => {
         title: "Something went wrong.",
       });
     } finally {
-      setSubmit(!submit);
+      setSubmit(false);
     }
   };
   return (
@@ -147,7 +147,7 @@ const ContactMe = () => {
             <span className="relative z-10">
               {submit ? "Process..." : "Send Email"}
             </span>
-            <span className="absolute -left-1 top-0 h-full w-0 bg-gradient-to-r from-blue-800 to-blue-300 transition-all duration-600 group-hover:w-180 group-active:w-xl -skew-x-6" />
+            <span className="absolute -left-1 top-0 h-full w-0 bg-linear-to-r from-blue-800 to-blue-300 transition-all duration-600 group-hover:w-190 -skew-x-6" />
           </button>
         </form>
       </div>
