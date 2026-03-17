@@ -5,12 +5,14 @@ import Swal from "sweetalert2";
 const ContactMe = () => {
   const [submit, setSubmit] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     setSubmit(true);
 
-    const formData = new FormData(e.target);
+    const form = e.currentTarget
+
+    const formData = new FormData(form);
     formData.append("_captcha", "false");
     formData.append("_subject", "Pesan dari portfolio site!");
 
@@ -40,7 +42,7 @@ const ContactMe = () => {
           icon: "success",
           title: "Message sent successfully!",
         });
-        e.target.reset();
+        form.reset();
       } else {
         Toast.fire({
           icon: "success",
