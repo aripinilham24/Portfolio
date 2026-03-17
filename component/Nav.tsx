@@ -41,7 +41,7 @@ const Nav = () => {
           ))}
         </div>
 
-        <a href="#home" className="brand hover:bg-linear-to-r from-blue-800 to-blue-300 bg-clip-text hover:text-transparent hover:text-2xl">
+        <a href="#home" className="brand ">
           <strong>Ilham</strong>Dev
         </a>
         <ButtonNav className="buttonTC" />

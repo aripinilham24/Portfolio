@@ -27,7 +27,7 @@ const dataCertif = [
   {
     title: "Certificate of Basic HTML",
     desc: "Covers the basics of HTML structure, elements, and semantic markup.",
-    img: "/img/certificates/sertifikat html.png",
+    img: "/img/certificates/webp/sertifikat html.webp",
     link: "https://www.codepolitan.com/c/NQRHD6Q/",
   },
   {

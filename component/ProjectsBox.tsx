@@ -1,6 +1,13 @@
 import { motion } from "motion/react";
 
-const ProjectsBox = ({ img, title, desc, link }) => {
+interface props {
+    img:string;
+    title:string;
+    desc:string;
+    link:string;
+}
+
+const ProjectsBox = ({ img, title, desc, link }: props) => {
     return (
         <motion.a
             initial={{ opacity: 0, y: 20 }}
