@@ -3,10 +3,12 @@ import { useState } from "react";
 const ContactForm = () => {
   const [status, setStatus] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault(); // cegah refresh
+  const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); 
 
-    const formData = new FormData(e.target);
+    const form = e.currentTarget;
+
+    const formData = new FormData(form);
     formData.append("_captcha", "false");
     formData.append("_subject", "Pesan dari portfolio site!");
 
@@ -18,7 +20,7 @@ const ContactForm = () => {
 
       if (res.ok) {
         setStatus("✅ Message sent successfully!");
-        e.target.reset();
+        form.reset()
       } else {
         setStatus("❌ Failed to send message.");
       }
@@ -53,7 +55,7 @@ const ContactForm = () => {
         className="mt-5 p-2 rounded relative overflow-hidden group border border-gray-100 text-gray-100 transition-all duration-300"
       >
         <span className="relative z-10">Send Email</span>
-        <span className="absolute -left-1 top-0 h-full w-0 bg-gradient-to-r from-blue-800 to-blue-300 transition-all duration-600 group-hover:w-xl -skew-x-6" />
+        <span className="absolute -left-1 top-0 h-full w-0 bg-linear-to-r from-blue-800 to-blue-300 transition-all duration-600 group-hover:w-xl -skew-x-6" />
       </button>
 
       {status && <p className="mt-3 text-sm">{status}</p>}
