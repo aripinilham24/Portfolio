@@ -1,5 +1,5 @@
-import CertificatesBox from "../component/CertificatesBox";
-import { dataCertif } from "../dataKomponen";
+import CertificatesBox from "../common/CertificatesBox";
+import { dataCertif } from "../../dataKomponen";
 import { motion } from "motion/react";
 
 const Certificates = () => {

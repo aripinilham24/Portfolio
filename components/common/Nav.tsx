@@ -1,9 +1,9 @@
-import { navLink } from "../dataKomponen";
+import { navLink } from "../../dataKomponen";
 import BurgerButton from "./BurgerButton";
 import { ButtonNav } from "./Button";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { slideFromTop } from "../dataKomponen/animation";
+import { slideFromTop } from "../../dataKomponen/animation";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);

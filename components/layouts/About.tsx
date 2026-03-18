@@ -1,4 +1,4 @@
-import { skillIcon } from "../dataKomponen";
+import { skillIcon } from "../../dataKomponen";
 import { motion } from "motion/react";
 const About = () => {
   return (

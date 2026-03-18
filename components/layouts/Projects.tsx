@@ -1,5 +1,5 @@
-import ProjectsBox from "../component/ProjectsBox";
-import { dataProjects } from "../dataKomponen";
+import ProjectsBox from "../common/ProjectsBox";
+import { dataProjects } from "../../dataKomponen";
 import { motion } from "motion/react";
 
 const Projects = () => {

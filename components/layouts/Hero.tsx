@@ -1,8 +1,8 @@
-import { ButtonLink } from "../component/Button";
+import { ButtonLink } from "../common/Button";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
-import DotPattern from "@/component/Background";
+import DotPattern from "@/components/common/Background";
 
 const Hero = () => {
   const heroRef = useRef(null);

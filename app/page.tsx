@@ -1,4 +1,4 @@
-import Page from "@/sections/index";
+import Page from "@/components/layouts/index";
 
 export default function Home () {
     return <Page />

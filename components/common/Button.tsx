@@ -1,6 +1,6 @@
 import React from "react";
 import type { ComponentPropsWithoutRef } from "react";
-import type { ButtonNavProps, ReusableLinkProps } from "../types/ui";
+import type { ButtonNavProps, ReusableLinkProps } from "../../types/ui";
 
 export type LinkButtonProps = ReusableLinkProps;
 
