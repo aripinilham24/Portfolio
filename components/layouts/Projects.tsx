@@ -1,8 +1,27 @@
+import { useState } from "react";
 import ProjectsBox from "../common/ProjectsBox";
 import { dataProjects } from "../../dataKomponen";
 import { motion } from "motion/react";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
 
 const Projects = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
+  const totalPages = Math.ceil(dataProjects.length / itemsPerPage);
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = dataProjects.slice(indexOfFirstItem, indexOfLastItem);
+  const [paginationBtn, paginationLink] = [
+    "text-blue-300 hover:text-blue-300 hover:bg-blue-300/0 hover:border hover:border-blue-300",
+    "text-blue-300 bg-blue-300/0 hover:bg-blue-300",
+  ];
   return (
     <section id="projects" className="section bg-gray-950">
       <div className="title">
@@ -23,11 +42,43 @@ const Projects = () => {
           project is a story of collaboration, creativity, and problem-solving.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 justify-start content-stretch gap-10 mt-10">
-        {dataProjects.map((project, index) => (
-          <ProjectsBox key={index} {...project} />
+       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
+        {currentItems.map((certif, index) => (
+          <ProjectsBox key={index} {...certif} />
         ))}
       </div>
+
+      <Pagination className="mt-10">
+        <PaginationContent>
+          <PaginationItem>
+            <PaginationPrevious
+              onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+              className={paginationBtn}
+            />
+          </PaginationItem>
+
+          {Array.from({ length: totalPages }, (_, i) => (
+            <PaginationItem key={i}>
+              <PaginationLink
+                isActive={currentPage === i + 1}
+                onClick={() => setCurrentPage(i + 1)}
+                className={currentPage === i + 1? `border-blue-300 ${paginationLink}` : paginationLink}
+              >
+                {i + 1}
+              </PaginationLink>
+            </PaginationItem>
+          ))}
+
+          <PaginationItem>
+            <PaginationNext
+              onClick={() =>
+                setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+              }
+              className={paginationBtn}
+            />
+          </PaginationItem>
+        </PaginationContent>
+      </Pagination>
     </section>
   );
 };
