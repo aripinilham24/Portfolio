@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CertificatesBox from "../common/CertificatesBox";
 import { dataCertif } from "../../dataKomponen";
 import { motion } from "motion/react";
@@ -12,8 +12,23 @@ import {
 } from "@/components/ui/pagination";
 
 const Certificates = () => {
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth <= 760);
+    };
+
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
+  if (isMobile === null) return null;
+
+  const itemsPerPage = isMobile ? 2 : 6;
 
   const totalPages = Math.ceil(dataCertif.length / itemsPerPage);
 
